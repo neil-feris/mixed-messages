@@ -1,4 +1,4 @@
-const first = [
+const playerOne = [
   "Monkey D. Luffy",
   "Roronoa Zoro",
   "Nami",
@@ -10,7 +10,7 @@ const first = [
   "Brook",
   "Jimbei",
 ];
-const second = [
+const fightingWord = [
   "pop",
   "rout",
   "thud",
@@ -55,7 +55,7 @@ const second = [
   "shove",
   "clip",
 ];
-const third = [
+const playerTwo = [
   "Lee",
   "Guy",
   "Gaara",
@@ -71,8 +71,8 @@ const third = [
   "Neji",
 ];
 
-firstWord = first[Math.floor(Math.random() * first.length)];
-secondWord = second[Math.floor(Math.random() * second.length)];
-thirdWord = third[Math.floor(Math.random() * third.length)];
+firstWord = playerOne[Math.floor(Math.random() * playerOne.length)];
+secondWord = fightingWord[Math.floor(Math.random() * fightingWord.length)];
+thirdWord = playerTwo[Math.floor(Math.random() * playerTwo.length)];
 
-console.log(firstWord + " wants to " + secondWord + " " + thirdWord + ".");
+console.log(`${firstWord} wants to ${secondWord} ${thirdWord}.`);
